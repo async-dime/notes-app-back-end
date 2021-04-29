@@ -43,7 +43,7 @@ const addNoteHandler = (request, h) => {
 };
 
 const getAllNotesHandler = () => ({
-  status: 'Success',
+  status: 'success',
   data: {
     notes,
   },
@@ -55,7 +55,7 @@ const getNoteByIdHandler = (request, h) => {
 
   if (note !== undefined) {
     return {
-      status: 'Success',
+      status: 'success',
       data: {
         note,
       },
